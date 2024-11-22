@@ -1,0 +1,106 @@
+.flex-center
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo
+{
+font-family:'Inter',  sans-serif;
+font-weight: bold;
+font-size: 40px;
+}
+
+.titulo2
+{
+font-family:'Inter',  sans-serif;
+font-weight: bold;
+font-size: 17px;
+}
+
+.parrafo
+{
+font-family:'Inter',  sans-serif;
+font-size: 13px;
+text-align: justify;
+width: 685px;
+}
+
+.parrafo2
+{
+font-family:'Inter',  sans-serif;
+font-size: 13px;
+text-align: justify;
+font-weight: bold;
+width: 700px;
+}
+
+.tituloBorder
+{
+position: absolute;
+top:50Px;
+left: 490px;
+background-color: black;
+border: 1px solid rgb(0, 132, 255);
+border-radius: 25px;
+width: 200px;
+height: 20px;
+text-align: center;
+font-family:'INTER';
+font-size: 15PX;
+color: blanchedalmond;
+font-weight:bold;
+
+}
+
+.fotoCirculo
+{
+position: absolute;
+top:100Px;
+left: 530px;
+}
+
+.barra
+{
+    background-color: rgb(209, 209, 209);
+}
+
+.progress {
+    height: 10px;
+    width: 200px;
+    border: 1px solid #428bca;
+    border-radius: 5px;
+    background-color: #e6f3fa;
+    margin-bottom: 15px;
+}
+ 
+.progress-bar {
+    height: 100%;
+    background: #e48a04;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+ 
+.progress-bar-text {
+    margin-left: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #cce7f5;
+    font-family:'INTER';
+}
+
+.video
+{
+position: absolute;
+top:320Px;
+left: 340px;
+}
+
+.fondo
+{
+background-color: #ecf1f5;
+width: 700px;
+align-content: baseline;
+}
