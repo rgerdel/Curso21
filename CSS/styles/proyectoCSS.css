@@ -1,6 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 .menu_logo{
-    width: 180px;
+    width:auto;
     margin-bottom: 0%;
+    background-color: #223040;
+    padding: 0%;
 }
 
 .menu{
@@ -79,15 +87,25 @@
     
 }
 
-.menu-h-h{
-    
+
+
+
+.grid {
+    height: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 3rem;
+}
+
+.grid-interno
+{
     display: flex;
-    justify-content: center;
-    text-align: center;
-    /*text-transform: uppercase;*/
-    align-items:center; 
-    width: 10vw;
-    height: 20px;
-   
-    
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(201, 201, 201);
+    border-radius: 16px;
+    color:black;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px; 
 }
