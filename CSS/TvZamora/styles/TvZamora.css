@@ -500,6 +500,93 @@
 @media only screen and (min-width: 768px) {
 
  
+    .grid{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        padding: .5rem;
+    }
+    .img-network{
+        width: 300px;
+        
+    }
+
+    .grid-azul{
+       
+        gap: .3rem;
+        padding: .3rem;
+    }
+
+    .cuadros{    
+        flex-direction: column;    
+        padding: 15px;
+    }
+
+    .grid-cuadros{   
+        width: 300px;   
+    }
+
+    .boxBoton-2{   
+        margin-bottom:30px;  
+    }
+
+    .titulo-1{
+        font-size: 2rem;  
+    }
+    
+    .titulo-2{
+        font-size: 1rem; 
+    }
+
+    .parrafo-3{
+  
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align:justify;
+    }
+    
+    .mapa{
+        width: 340px;
+    }
+
+    .grid-gris{
+        display:block;
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+    
+    
+    .grid-2{
+        display: block;
+    } 
+
+    .input-tex {
+        width: 280px;
+    }
+
+    .input-tex-2 {
+        width: 280px;
+    }
+
+    .grid-cuadros-2{    
+        width: 100%;
+    }
+   
+    .boxBoton-4{
+        width: 160px;
+        height: 40px;
+    }
+
+    .titulo-5{
+
+        margin-top: 10px;
+    }
+ 
+
+ 
   }
   
   /* Large devices (laptops/desktops, 992px and up) */
