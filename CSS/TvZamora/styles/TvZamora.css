@@ -409,6 +409,12 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
   
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
     .grid{
         display: flex;
         flex-direction: column;
@@ -435,7 +441,7 @@
     }
 
     .grid-cuadros{   
-        width: 600px;   
+        width: 100%;   
     }
 
     .boxBoton-2{   
