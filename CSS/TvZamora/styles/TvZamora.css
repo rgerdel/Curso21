@@ -504,6 +504,11 @@
         margin-top: 10px;
     }
     
+    .marco{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
