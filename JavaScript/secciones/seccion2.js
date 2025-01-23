@@ -283,7 +283,7 @@ for(let i = 0; i < lista.length; i++){
 }
 
 if(bandera == false){
-  console.log("No estoy durmiendo");
+  console.log("Nooo estoy durmiendo");
 }
 
 // Acomodar ese codigo para que, si en la lista se encuentra la palabra dormir y 
