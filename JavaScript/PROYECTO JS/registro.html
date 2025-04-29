@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>REGISTRO</title>
+</head>
+<body>
+    <form>
+        <h2>REGISTRO DE USUARIOS</h2>
+        <div class="input-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido" required>
+            
+            <label for="telefono">Telefono:</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su telefono" required>
+           
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su Email" required>
+
+            <label for="usuario">USUARIO:</label>
+            <input type="text" name="usuario" id="usuario" placeholder="USUARIO" required>
+            
+            <label for="contrasena">CONTRASENA:</label>
+            <input type="password" name="contrasena" id="contrasena" placeholder="CONTRASENA" required>
+
+            <button class="btn2" onclick="addTask()">REGISTRAR</button>
+            
+            <div class="txt1"><a href="./home.html">< -- INICIO</a></div>
+            <div class="txt2"><a href="./login.html">ACCESO -- ></a>
+            </div>
+        </div>
+
+    </form>
+    <script src="./registro.js"></script>
+</body>
+</html>

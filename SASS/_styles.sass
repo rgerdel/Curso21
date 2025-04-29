@@ -1,0 +1,119 @@
+
+/*SASS es un lenguaje sin puntos y comas y sin llaves, pero es muy sensible con la identacion*/  
+
+// Comentario que no se va a compilar y no se va a ver en CSS
+// https://kenney.nl/
+
+// Variables
+
+$color-principal: #b86a6a
+$color-secundario: #325834
+$color-terciario: #2a93a6
+$color-cuarto: #96b86a
+
+// Lista de colores
+
+$colores: (#b86a6a, #325834, #2a93a6, #96b86a)
+$colores.nth(0)
+$colores.nth(1)
+$colores.nth(2)
+$colores.nth(3)
+
+
+// Mixins (plantillas)
+// Los mixins se llaman con @mixin y deben tener un nombre
+
+@mixin base
+  background-color: $color-terciario
+  color: $color-secundario
+  padding: 1rem
+  border-radius: 1rem
+
+@mixin alinear($direction, $gap: 1rem)
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: $direction
+  // Condicionales en SASS: Comparador (==)(!=)(<,>,<=,>=), if, else if, else. 
+  // Operadores: +, -, *, /
+  @if $gap > 2
+    gap: 2rem
+  @if $direction == row
+    gap: 1rem + $gap
+  @else if $direction == column
+    gap: calc(2rem / $gap)
+  @else 
+    gap: 0 + $gap // equivalente en js => gap = 0 + gap
+
+
+@mixin colores($border, $padding) // #{2.5}rem✅ #{2.5rem}rem❌
+  color: $color-principal
+  background-color: $color-secundario
+  border: 1px solid $border
+  outline: 1px solid $color-cuarto
+
+  // Declaracion literal
+  padding: #{$padding}rem // #{2.5}rem -> 2.5rem
+  
+
+  @if $padding > 2
+    border-radius: 1rem
+  @else if $padding <= 1 and $padding > 0.5
+    border-radius: 0.5rem
+  @else if not $padding == 0.5
+    border-radius: 0.2rem
+  @else
+    border-radius: 0.1rem
+
+.container
+  @include colores($color-principal, 1rem)
+
+nav
+  @include colores($color-cuarto, 2rem)
+  
+  background-color: $color-cuarto
+  padding: 1rem
+  ul
+    // @include para llamar a un mixin
+    @include alinear('row')
+    list-style: none
+    gap: 1rem
+
+body
+  background: black
+
+h1
+  color: white
+  text-align: center
+
+
+div
+  @include alinear(row)
+  color: $color-principal
+  background-color: $color-secundario
+
+// Anidacion
+.seccion
+  background-color: $color-principal
+  color: $color-secundario
+  @include alinear(column)
+  padding: 1rem
+  gap: 1rem
+  h2
+    font-size: 2rem
+    border: 1px solid black
+    border-radius: 1rem
+  p
+    font-size: 1.5rem
+    border: 1px solid black
+    border-radius: 1rem
+  ul
+    list-style: none
+    padding: 1rem
+    li
+      font-size: 1.2rem
+      border: 10px solid black
+  button
+    @include base
+
+

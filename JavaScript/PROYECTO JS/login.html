@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>ACCESO</title>
+
+
+</head>
+<body>
+    
+    <p id="demo"></p>
+        <form> 
+            <h2>ACCESO A USUARIO</h2>
+                <div class="input-group">
+                    <label>Usuario:</label>
+                    <input placeholder="Ingrese su Usuario" id="usuario" required>
+                    <label>Contrasena:</label>
+                    <input placeholder="Ingrese su Contrasena" id="contrasena" required>
+                    <input class="btn" type="submit" value="REGISTRAR">
+            </div>
+        </form>
+       
+    <!-- <ul id="taskList"></ul> -->
+
+    <script>
+
+        function myFunction() {
+          var x = localStorage.getItem("registros");
+          document.getElementById("demo").innerHTML = x;
+        }
+        console.log(x)
+     </script>
+     
+            
+    <!-- <script src="./login.js"></script> -->
+</body>
+</html>

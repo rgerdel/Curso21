@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+.menu {
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+    display:flex;
+    gap: 1rem;
+    font-family: "Inclusive Sans", serif;   
+}

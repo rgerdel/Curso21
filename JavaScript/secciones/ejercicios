@@ -1,0 +1,57 @@
+// Ejercicio 2:
+// Mostrar todos los elementos del objeto a continuacion:
+let personas = [
+  { // [0]
+    nombre: "Juan",
+    apellido: "Perez",
+    edad: 25, // personas[0].edad
+    hobbies: ["correr","saltar","dormir"],
+    direccion: {
+      calle: "calle 1",
+      numero: 1,
+      barrio: "Barrio 1"
+    },
+    saludar: function(){
+      console.log("Hola desde un objeto");
+    }
+  },
+  { // [1]
+    nombre: "Maria",
+    apellido: "Salome",
+    edad: 25,
+    hobbies: ["correr","saltar","dormir"], // personas[1].hobbies[1]
+    direccion: {
+      calle: "calle 1",
+      numero: 1,
+      barrio: "Barrio 1" // personas[1].direccion.barrio o personas[1]['direccion']['barrio']
+    },
+    saludar: function(){
+      console.log("Hola desde un objeto");
+    }
+  },
+  { //[2]
+    nombre: "Manuel",
+    apellido: "Hernandez",
+    edad: 25,
+    hobbies: ["correr","saltar","dormir"],
+    direccion: {
+      calle: "calle 1",
+      numero: 1,
+      barrio: "Barrio 1"
+    },
+    saludar: function(){ // personas[2].saludar();
+      console.log("Hola desde un objeto");
+    }
+  }
+]
+
+// Mostrar cada propiedad y cada elemento de cada arreglo y objeto del objeto personas
+// Se puede utilizar for of y for in o se pueden utilizar ciclos for normales
+// let Text
+
+for (const propiedad in personas) {
+    console.log(propiedad, personas[propiedad]);
+  }
+  
+
+  
